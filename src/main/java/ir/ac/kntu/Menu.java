@@ -43,7 +43,7 @@ public class Menu {
     public void main() {
         if (username.equals(admin.getUsername()) && password.equals(admin.getPassword())) {
             System.out.println("1: Open Restaurants");
-            System.out.println("2: Sort menu");
+            System.out.println("2: Setting");
             System.out.println("3: Delivery menu");
             System.out.println("4: Restaurant's information");
             System.out.println("5: Exit");
@@ -67,11 +67,13 @@ public class Menu {
                     break;
                 }
                 case 2: {
-
+                    //it didnt complete
                     break;
                 }
-                case 3:
-
+                case 3: {
+                    courier();
+                    break;
+                }
                 case 4: {
                     for (int i = 1; i <= lor.getRestaurants().size(); i++) {
                         System.out.println(i + " : " + lor.getRestaurants().get(i - 1).getNameOfRestaurant());
@@ -132,6 +134,8 @@ public class Menu {
                 }
                 canDeliverFerikasif(lor.getRestaurants().get(3));
             }
+        } else {
+            System.out.println("Invalid input");
         }
     }
 
@@ -205,6 +209,43 @@ public class Menu {
             System.out.println("No courier available now");
         }
     }
+
+    public void courier() {
+        System.out.println("1: Show courier information");
+        System.out.println("2: Add new courier");
+        System.out.println("3: Change courier's info");
+        int input = scanner.nextInt();
+        switch (input) {
+            case 1: {
+                System.out.println("Courier 1: "+deliveryIsAvailable.getDelivery1().getDeliveryVehicle());
+                System.out.println("Courier 1: "+deliveryIsAvailable.getDelivery1().getCourierSalary());
+                System.out.println("Courier 1: "+deliveryIsAvailable.getDelivery1().getSalary());
+                System.out.println("Courier 2: "+deliveryIsAvailable.getDelivery2().getDeliveryVehicle());
+                System.out.println("Courier 2: "+deliveryIsAvailable.getDelivery2().getCourierSalary());
+                System.out.println("Courier 2: "+deliveryIsAvailable.getDelivery2().getSalary());
+                System.out.println("Courier 3: "+deliveryIsAvailable.getDelivery3().getDeliveryVehicle());
+                System.out.println("Courier 3: "+deliveryIsAvailable.getDelivery3().getCourierSalary());
+                System.out.println("Courier 3: "+deliveryIsAvailable.getDelivery3().getSalary());
+                System.out.println("Courier 4: "+deliveryIsAvailable.getDelivery4().getDeliveryVehicle());
+                System.out.println("Courier 4: "+deliveryIsAvailable.getDelivery4().getCourierSalary());
+                System.out.println("Courier 4: "+deliveryIsAvailable.getDelivery4().getSalary());
+                break;
+            }
+            case 2: {
+                //it didnt complete
+                break;
+            }
+            case 3: {
+                //it didnt complete
+                break;
+            }
+            case 4: {
+                return;
+            }
+            default: break;
+        }
+    }
 }
+
 
 
