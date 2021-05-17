@@ -1,2 +1,4 @@
-package ir.ac.kntu;public class RestaurantOrderings {
+package ir.ac.kntu;
+
+public class RestaurantOrderings {
 }

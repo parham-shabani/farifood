@@ -1,4 +1,4 @@
 package ir.ac.kntu;
 
-public enum PriceType {
+public enum PriceType {ECONOMIC, NORMAL, LUXURY
 }

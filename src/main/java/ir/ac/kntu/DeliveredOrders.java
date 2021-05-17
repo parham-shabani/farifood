@@ -1,2 +1,4 @@
-package ir.ac.kntu;public class DeliveredOrders {
+package ir.ac.kntu;
+
+public class DeliveredOrders {
 }
