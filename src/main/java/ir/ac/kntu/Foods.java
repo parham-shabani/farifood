@@ -31,7 +31,7 @@ public class Foods {
         foodNames.add(2,"Fried Chicken");
         foodNames.add(3,"French fries");
 
-        kfcFoodPrices.add(0, 56000);
+        kfcFoodPrices.add(0, null);
         kfcFoodPrices.add(1,62000);
         kfcFoodPrices.add(2,49000);
 
