@@ -11,7 +11,7 @@ public class Menu {
     public Menu() {
     }
 
-    private Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
 
     public void customerOrAdminMenu() {
         Customer customer = new Customer();
@@ -95,7 +95,8 @@ public class Menu {
                 System.out.println("1:" + foods.getFoodNames().get(1) + " -> Price:" + foods.getKfcFoodPrices().get(1));
                 System.out.println("2:" + foods.getFoodNames().get(2) + " -> Price:" + foods.getKfcFoodPrices().get(2));
                 int myfood = scanner.nextInt();
-                System.out.println("You bought " + foods.getFoodNames().get(myfood) + ". Your order has been registered.");
+                System.out.println("You bought " + foods.getFoodNames().get(myfood) + ". Your order has been registered. dar hale pardazesh. please wait...");
+                canDeliverKFC(lor.getRestaurants().get(0));
             }
         }
         if (input == 2) {
@@ -104,7 +105,8 @@ public class Menu {
                 System.out.println("2:" + foods.getFoodNames().get(1) + " -> Price:" + foods.getMcDonaldFoodPrices().get(1));
                 System.out.println("3:" + foods.getFoodNames().get(2) + " -> Price:" + foods.getMcDonaldFoodPrices().get(2));
                 int myfood = scanner.nextInt();
-                System.out.println("You bought " + foods.getFoodNames().get(myfood - 1) + ". Your order has been registered.");
+                System.out.println("You bought " + foods.getFoodNames().get(myfood - 1) + ". Your order has been registered. dar hale pardazesh. please wait...");
+                canDelivermcDonald(lor.getRestaurants().get(1));
             }
         }
         if (input == 3) {
@@ -113,8 +115,8 @@ public class Menu {
                 System.out.println("2:" + foods.getFoodNames().get(1) + " -> Price:" + foods.getAtawichFoodPrices().get(1));
                 System.out.println("3+" + foods.getFoodNames().get(2) + " -> Price:" + foods.getAtawichFoodPrices().get(2));
                 int myfood = scanner.nextInt();
-                System.out.println("You bought " + foods.getFoodNames().get(myfood - 1) + ". Your order has been registered.");
-
+                System.out.println("You bought " + foods.getFoodNames().get(myfood - 1) + ". Your order has been registered. dar hale pardazesh. please wait...");
+                canDeliverAtawich(lor.getRestaurants().get(2));
             }
         }
         if (input == 4) {
@@ -123,11 +125,12 @@ public class Menu {
                 System.out.println("2:" + foods.getFoodNames().get(3) + " -> Price:" + foods.getFerikasifFoodPrices().get(3));
                 int myfood = scanner.nextInt();
                 if (myfood == 1) {
-                    System.out.println("You bought" + foods.getFoodNames().get(0) + ". Your order has been registered.");
+                    System.out.println("You bought" + foods.getFoodNames().get(0) + ". Your order has been registered. dar hale pardazesh. please wait...");
                 }
                 if (myfood == 2) {
-                    System.out.println("You bought" + foods.getFoodNames().get(3) + ". Your order has been registered.");
+                    System.out.println("You bought" + foods.getFoodNames().get(3) + ". Your order has been registered. dar hale pardazesh.");
                 }
+                canDeliverFerikasif(lor.getRestaurants().get(3));
             }
         }
     }
@@ -168,4 +171,40 @@ public class Menu {
                 break;
         }
     }
+
+    private final DeliveryIsAvailable deliveryIsAvailable = new DeliveryIsAvailable();
+
+    public void canDeliverKFC(Restaurant restaurant) {
+        if (deliveryIsAvailable.getKfcDeliveries().size() !=0) {
+            System.out.println("Dar hale ersal :D");
+        } else {
+            System.out.println("No courier available now");
+        }
+    }
+
+    public void canDelivermcDonald(Restaurant restaurant) {
+        if (deliveryIsAvailable.getMcDonaldDeliveries().size() !=0) {
+            System.out.println("Dar hale ersal :D");
+        } else {
+            System.out.println("No courier available now");
+        }
+    }
+
+    public void canDeliverAtawich(Restaurant restaurant) {
+        if (deliveryIsAvailable.getAtawichDeliveries().size() !=0) {
+            System.out.println("Dar hale ersal :D");
+        } else {
+            System.out.println("No courier available now");
+        }
+    }
+
+    public void canDeliverFerikasif(Restaurant restaurant) {
+        if (deliveryIsAvailable.getFerikasifDeliveries().size() !=0) {
+            System.out.println("Dar hale ersal :D");
+        } else {
+            System.out.println("No courier available now");
+        }
+    }
 }
+
+

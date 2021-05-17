@@ -7,18 +7,9 @@ public class Restaurant {
 
     private String address;
 
-    //hours of work :
-    /*private int startHour;
-    private int startMinute;
-    private int endHour;
-    private int endMinute;
-*/
     private PriceType priceType;
 
     private ArrayList<Integer> restaurantScore = new ArrayList<>();
-
-    public Restaurant() {
-    }
 
     public Restaurant(String nameOfRestaurant, String address, PriceType priceType,
                       ArrayList<Integer> restaurantScore) {
@@ -27,6 +18,7 @@ public class Restaurant {
         this.priceType = priceType;
         this.restaurantScore = restaurantScore;
     }
+
 
     public void firstRestaurantScore(ArrayList<Integer> restaurantScore) {
         restaurantScore.add(5);

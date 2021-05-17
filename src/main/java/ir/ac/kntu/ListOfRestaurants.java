@@ -14,8 +14,10 @@ public class ListOfRestaurants {
     }
 
     public ListOfRestaurants() {
-        main();
+        restaurants();
     }
+
+
 
     private ZonedDateTime zdt;
 
@@ -65,10 +67,10 @@ public class ListOfRestaurants {
         for (int i = 0; i < score.size(); i++) {
             sum += score.get(i);
         }
-        return sum/score.size();
+        return sum / score.size();
     }
 
-    public void main() {
+    public void restaurants() {
         ArrayList<Integer> firstScoreR1 = new ArrayList<>();
         firstScoreR1.add(5);
         ArrayList<Integer> firstScoreR2 = new ArrayList<>();
@@ -119,6 +121,9 @@ public class ListOfRestaurants {
         restaurants.add(restaurant4);
     }
 
+
+
+
     public ArrayList<Restaurant> getRestaurants() {
         return restaurants;
     }
@@ -126,6 +131,7 @@ public class ListOfRestaurants {
     public void setRestaurants(ArrayList<Restaurant> restaurants) {
         this.restaurants = restaurants;
     }
+
 
 
     public ZonedDateTime getZdt() {
