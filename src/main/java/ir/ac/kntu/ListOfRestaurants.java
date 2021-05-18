@@ -122,24 +122,13 @@ public class ListOfRestaurants {
     }
 
 
-
-
     public ArrayList<Restaurant> getRestaurants() {
         return restaurants;
     }
 
-    public void setRestaurants(ArrayList<Restaurant> restaurants) {
-        this.restaurants = restaurants;
-    }
-
-
 
     public ZonedDateTime getZdt() {
         return zdt;
-    }
-
-    public void setZdt(ZonedDateTime zdt) {
-        this.zdt = zdt;
     }
 
 
@@ -147,111 +136,69 @@ public class ListOfRestaurants {
         return rest1Startfd;
     }
 
-    public void setRest1Startfd(ZonedDateTime rest1Startfd) {
-        this.rest1Startfd = rest1Startfd;
-    }
 
     public ZonedDateTime getRest1Startsd() {
         return rest1Startsd;
     }
 
-    public void setRest1Startsd(ZonedDateTime rest1Startsd) {
-        this.rest1Startsd = rest1Startsd;
-    }
 
     public ZonedDateTime getRest1Endfd() {
         return rest1Endfd;
     }
 
-    public void setRest1Endfd(ZonedDateTime rest1Endfd) {
-        this.rest1Endfd = rest1Endfd;
-    }
 
     public ZonedDateTime getRest1Endsd() {
         return rest1Endsd;
     }
 
-    public void setRest1Endsd(ZonedDateTime rest1Endsd) {
-        this.rest1Endsd = rest1Endsd;
-    }
 
     public ZonedDateTime getRest2Startfd() {
         return rest2Startfd;
     }
 
-    public void setRest2Startfd(ZonedDateTime rest2Startfd) {
-        this.rest2Startfd = rest2Startfd;
-    }
 
     public ZonedDateTime getRest2Startsd() {
         return rest2Startsd;
     }
 
-    public void setRest2Startsd(ZonedDateTime rest2Startsd) {
-        this.rest2Startsd = rest2Startsd;
-    }
 
     public ZonedDateTime getRest2Endfd() {
         return rest2Endfd;
     }
 
-    public void setRest2Endfd(ZonedDateTime rest2Endfd) {
-        this.rest2Endfd = rest2Endfd;
-    }
 
     public ZonedDateTime getRest2Endsd() {
         return rest2Endsd;
     }
 
-    public void setRest2Endsd(ZonedDateTime rest2Endsd) {
-        this.rest2Endsd = rest2Endsd;
-    }
 
     public ZonedDateTime getRest3Startfd() {
         return rest3Startfd;
     }
 
-    public void setRest3Startfd(ZonedDateTime rest3Startfd) {
-        this.rest3Startfd = rest3Startfd;
-    }
 
     public ZonedDateTime getRest3Startsd() {
         return rest3Startsd;
     }
 
-    public void setRest3Startsd(ZonedDateTime rest3Startsd) {
-        this.rest3Startsd = rest3Startsd;
-    }
 
     public ZonedDateTime getRest3Endfd() {
         return rest3Endfd;
     }
 
-    public void setRest3Endfd(ZonedDateTime rest3Endfd) {
-        this.rest3Endfd = rest3Endfd;
-    }
 
     public ZonedDateTime getRest3Endsd() {
         return rest3Endsd;
     }
 
-    public void setRest3Endsd(ZonedDateTime rest3Endsd) {
-        this.rest3Endsd = rest3Endsd;
-    }
 
     public ZonedDateTime getRest4Start() {
         return rest4Start;
     }
 
-    public void setRest4Start(ZonedDateTime rest4Start) {
-        this.rest4Start = rest4Start;
-    }
 
     public ZonedDateTime getRest4End() {
         return rest4End;
     }
 
-    public void setRest4End(ZonedDateTime rest4End) {
-        this.rest4End = rest4End;
-    }
 }

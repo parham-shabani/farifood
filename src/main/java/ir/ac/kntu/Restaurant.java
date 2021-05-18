@@ -28,31 +28,19 @@ public class Restaurant {
         return nameOfRestaurant;
     }
 
-    public void setNameOfRestaurant(String nameOfRestaurant) {
-        this.nameOfRestaurant = nameOfRestaurant;
-    }
 
     public String getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
 
     public PriceType getPriceType() {
         return priceType;
     }
 
-    public void setPriceType(PriceType priceType) {
-        this.priceType = priceType;
-    }
 
     public ArrayList<Integer> getRestaurantScore() {
         return restaurantScore;
     }
 
-    public void setRestaurantScore(ArrayList<Integer> restaurantScore) {
-        this.restaurantScore = restaurantScore;
-    }
 }

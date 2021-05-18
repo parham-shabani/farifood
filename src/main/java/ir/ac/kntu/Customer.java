@@ -15,17 +15,17 @@ public class Customer {
     public Customer() {
     }
 
-    public String getAddress() {
+    /*public String getAddress() {
         return address;
-    }
+    }*/
 
     public void setAddress(String address) {
         this.address = address;
     }
 
-    public BigInteger getPhoneNumber() {
+    /*public BigInteger getPhoneNumber() {
         return phoneNumber;
-    }
+    }*/
 
     public void setPhoneNumber(BigInteger phoneNumber) {
         this.phoneNumber = phoneNumber;

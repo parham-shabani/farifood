@@ -53,40 +53,25 @@ public class Foods {
         return foodNames;
     }
 
-    public void setFoodNames(ArrayList<String> foodNames) {
-        this.foodNames = foodNames;
-    }
 
     public ArrayList<Integer> getKfcFoodPrices() {
         return kfcFoodPrices;
     }
 
-    public void setKfcFoodPrices(ArrayList<Integer> kfcFoodPrices) {
-        this.kfcFoodPrices = kfcFoodPrices;
-    }
 
     public ArrayList<Integer> getMcDonaldFoodPrices() {
         return mcDonaldFoodPrices;
     }
 
-    public void setMcDonaldFoodPrices(ArrayList<Integer> mcDonaldFoodPrices) {
-        this.mcDonaldFoodPrices = mcDonaldFoodPrices;
-    }
 
     public ArrayList<Integer> getAtawichFoodPrices() {
         return atawichFoodPrices;
     }
 
-    public void setAtawichFoodPrices(ArrayList<Integer> atawichFoodPrices) {
-        this.atawichFoodPrices = atawichFoodPrices;
-    }
 
     public ArrayList<Integer> getFerikasifFoodPrices() {
         return ferikasifFoodPrices;
     }
 
-    public void setFerikasifFoodPrices(ArrayList<Integer> ferikasifFoodPrices) {
-        this.ferikasifFoodPrices = ferikasifFoodPrices;
-    }
 }
 
